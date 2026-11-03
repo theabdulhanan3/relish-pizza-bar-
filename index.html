@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Relish Pizza Bar — Khanqah Sharif</title>
+<meta name="description" content="Relish Pizza Bar, Khanqah Sharif. Relish Every Bite! Since 2024. Free Home Delivery with Cash on Delivery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">R</span>
+      <span class="brand-text">
+        <strong>Relish</strong>
+        <small>Pizza Bar</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Our Owner</a>
+      <a href="#delivery">Delivery &amp; COD</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-gold btn-sm" id="cartBtn" type="button">
+        <span class="cart-ico">🛒</span> Cart
+        <span class="badge" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO (FRONT PAGE) ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="hero-tagline">★ SINCE 2024 ★</span>
+      <h1>Relish <span class="gold">Every Bite</span></h1>
+      <p class="hero-sub">
+        Khanqah Sharif ka behtareen Pizza Bar. Ab har order par <strong>Free Home Delivery</strong>. Fresh, Delicious &amp; Fast!
+      </p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-gold">Explore Menu</a>
+        <button class="btn btn-outline-white" id="heroOrderBtn" type="button">Order Now: 0306-0716500</button>
+      </div>
+      <ul class="hero-points">
+        <li>✔ Free Home Delivery</li>
+        <li>✔ Cash on Delivery</li>
+        <li>✔ Fresh &amp; Hot</li>
+      </ul>
+    </div>
+
+    <!-- Hero Food Image Collage (Poster Style) -->
+    <div class="hero-visual">
+      <div class="hero-circle">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Delicious Pizza" class="floating-img pizza-img" />
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Zinger Burger" class="floating-img burger-img" />
+        <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=500&q=80" alt="Fried Chicken" class="floating-img wings-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIGHLIGHTS ============ -->
+<section class="highlights">
+  <div class="container highlight-grid">
+    <div class="hl-item"><span class="hl-ico">🚚</span><h4>Free Delivery</h4><p>Har order par bilkul free</p></div>
+    <div class="hl-item"><span class="hl-ico">💵</span><h4>Cash on Delivery</h4><p>Khana le kar paisay dein</p></div>
+    <div class="hl-item"><span class="hl-ico">🔥</span><h4>Fresh &amp; Hot</h4><p>Order par taza banaya jata hai</p></div>
+    <div class="hl-item"><span class="hl-ico">⭐</span><h4>Premium Quality</h4><p>Best ingredients in town</p></div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow gold">Our Signature Menu</span>
+      <h2>Relish <span class="gold">Menu</span></h2>
+      <p class="muted center">Category chunein, item cart mein daalein aur WhatsApp par order confirm karein.</p>
+    </div>
+
+    <div class="filters" id="filters"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+
+    <p class="menu-note">
+      * Tamam prices PKR mein hain. Free Home Delivery all over Khanqah Sharif.
+    </p>
+  </div>
+</section>
+
+<!-- ============ OWNER ============ -->
+<section class="section owner-section" id="about">
+  <div class="container owner-grid">
+    <div class="owner-photo-wrap">
+      <div class="owner-photo">
+        <span class="owner-initials">WB</span>
+        <img src="assets/owner.jpg" alt="Waqas Bhatti — Owner, Relish Pizza Bar"
+             onerror="this.style.display='none'" />
+      </div>
+      <div class="owner-frame"></div>
+    </div>
+
+    <div class="owner-copy">
+      <span class="eyebrow gold">Meet The Owner</span>
+      <h2>Waqas <span class="gold">Bhatti</span></h2>
+      <p class="owner-role">Founder &amp; Owner — Relish Pizza Bar</p>
+      <p>
+        Relish Pizza Bar ka safar aik hi soch se shuru hua: <em>“har customer ko five star
+        quality ka khana, local market ki qeemat par.”</em> Waqas Bhatti ki nigrani mein
+        hamari kitchen roz taza dough, imported cheese aur hand-picked ingredients
+        istemaal karti hai.
+      </p>
+      <p>
+        Aaj Khanqah Sharif aur gird-o-nawah ke log hamare yahan family dinners, birthday
+        parties aur late-night cravings ke liye aate hain — aur hum har order ko usi
+        mohabbat se tayyar karte hain.
+      </p>
+
+      <div class="owner-stats">
+        <div><strong>Since 2024</strong><span>Established</span></div>
+        <div><strong>100%</strong><span>Fresh Food</span></div>
+        <div><strong>4.9★</strong><span>Customer Rating</span></div>
+      </div>
+
+      <blockquote class="owner-quote">
+        “Hum customer ko sirf khana nahi dete — hum unke din ka behtareen hissa dete hain.”
+        <cite>— Waqas Bhatti</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELIVERY / COD ============ -->
+<section class="section delivery-section" id="delivery">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow gold">Ordering Made Easy</span>
+      <h2>Delivery &amp; <span class="gold">Cash on Delivery</span></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step-card">
+        <span class="step-num">01</span>
+        <h4>Menu se item chunein</h4>
+        <p>Har item ke sath price aur <b>Order Now</b> ka button maujood hai.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">02</span>
+        <h4>Cart mein order complete karein</h4>
+        <p>Quantity badlein, phir Checkout par apna naam, phone aur address likhein.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">03</span>
+        <h4>WhatsApp par confirm</h4>
+        <p>Order automatically WhatsApp par chala jayega — humari team foran reply karegi.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">04</span>
+        <h4>Khana lein, paisay dein</h4>
+        <p><b>Cash on Delivery</b> — delivery ke waqt cash dein.</p>
+      </div>
+    </div>
+
+    <div class="delivery-strip">
+      <div class="ds-item"><span>🛵</span><div><strong>Delivery Charges</strong><p>Bilkul FREE — Khanqah Sharif ke andar</p></div></div>
+      <div class="ds-item"><span>⏱️</span><div><strong>Delivery Time</strong><p>30–45 minutes (peak hours mein thora zyada)</p></div></div>
+      <div class="ds-item"><span>🏠</span><div><strong>Pickup</strong><p>Khud collect karein — Shahb Pull</p></div></div>
+      <div class="ds-item"><span>💵</span><div><strong>Payment</strong><p>Cash on Delivery only</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow gold">Visit Us</span>
+      <h2>Find <span class="gold">Relish</span></h2>
+      <p class="muted">Khanqah Sharif ke dil mein — Shahb Pull.</p>
+
+      <ul class="contact-list">
+        <li><span>📍</span><div><strong>Address</strong><p>Relish Pizza Bar, Shahb Pull, Khanqah Sharif</p></div></li>
+        <li><span>🕒</span><div><strong>Timings</strong><p>Daily 12:00 PM – 02:00 AM</p></div></li>
+        <li><span>📞</span><div><strong>Order Now</strong><p>+92 306 0716500</p></div></li>
+        <li><span>📞</span><div><strong>For Complaints</strong><p>+92 307 7379600</p></div></li>
+      </ul>
+
+      <div class="contact-btns">
+        <button class="btn btn-gold" id="contactWaBtn" type="button">Chat on WhatsApp</button>
+        <a class="btn btn-outline-dark" href="https://www.google.com/maps/search/?api=1&query=Shahb+Pull+Khanqah+Sharif" target="_blank" rel="noopener">Open in Maps</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3>Hungry?</h3>
+      <p class="muted">Cart mein item daalein aur checkout par WhatsApp order bhej dein. Free Home Delivery!</p>
+      <a href="#menu" class="btn btn-gold w-full">Browse Menu</a>
+      <div class="contact-card-note">
+        <span>💵</span> Cash on Delivery available
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">R</span>
+      <div>
+        <strong>Relish Pizza Bar</strong>
+        <p>Relish Every Bite · Since 2024</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#about">Owner</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Relish Pizza Bar. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-head">
+    <h3>Your Order</h3>
+    <button class="icon-btn" id="closeCart" type="button" aria-label="Close">✕</button>
+  </div>
+
+  <div class="cart-body" id="cartBody"></div>
+
+  <div class="cart-foot">
+    <div class="cart-line"><span>Subtotal</span><b id="cartSubtotal">Rs 0</b></div>
+    <div class="cart-line"><span>Delivery</span><b id="cartDelivery">Free</b></div>
+    <div class="cart-line total"><span>Total</span><b id="cartTotal">Rs 0</b></div>
+    <button class="btn btn-gold w-full" id="checkoutBtn" type="button">Proceed to Checkout</button>
+    <p class="tiny center">Payment: Cash on Delivery</p>
+  </div>
+</aside>
+
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Checkout</h3>
+      <button class="icon-btn" id="closeCheckout" type="button" aria-label="Close">✕</button>
+    </div>
+
+    <form id="checkoutForm" class="checkout-form" novalidate>
+      <div class="field">
+        <label for="custName">Full Name *</label>
+        <input type="text" id="custName" name="name" placeholder="Aapka naam" required />
+      </div>
+
+      <div class="field">
+        <label for="custPhone">Phone Number *</label>
+        <input type="tel" id="custPhone" name="phone" placeholder="03XX-XXXXXXX" required />
+      </div>
+
+      <div class="field">
+        <label>Order Type *</label>
+        <div class="radio-row">
+          <label class="radio"><input type="radio" name="orderType" value="Delivery" checked /> <span>Home Delivery</span></label>
+          <label class="radio"><input type="radio" name="orderType" value="Pickup" /> <span>Pickup</span></label>
+        </div>
+      </div>
+
+      <div class="field" id="addressField">
+        <label for="custAddress">Delivery Address *</label>
+        <textarea id="custAddress" name="address" rows="2" placeholder="Ghar / mohalla / landmark"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="custNotes">Order Notes (optional)</label>
+        <textarea id="custNotes" name="notes" rows="2" placeholder="Extra cheese, no onion, etc."></textarea>
+      </div>
+
+      <div class="checkout-summary" id="checkoutSummary"></div>
+
+      <div class="cod-note"><span>💵</span> Payment method: <b>Cash on Delivery</b></div>
+
+      <button class="btn btn-gold w-full" type="submit">Place Order on WhatsApp</button>
+      <p class="tiny center">Order confirm karne ke liye WhatsApp khulega — message pehle se likha hoga.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FLOATING CART (MOBILE) ============ -->
+<button class="float-cart" id="floatCart" type="button">
+  🛒 <span id="floatCount">0</span>
+</button>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script src="js/menu.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
